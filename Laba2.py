@@ -21,8 +21,8 @@ for temp in range(0, len(sequence)-1):
         position = position_temp
 
 if len_ != 0:
-    del sequence[position+len_:]
-    del sequence[0:position]
+    del sequence[position+len_-1:]
+    del sequence[0:position-1]
     print ("Самая длинная последовательность: ", sequence)
     print ("Длинна последовательности: ", len_)
     print ("Позиция, с которой началась последовательность: ", position)
